@@ -15,10 +15,10 @@ if (argv.length >= 6) {
 
 (async () => {
     const browser = await puppeteer.launch({
-        // headless: true,
-        // executablePath: "/usr/bin/google-chrome" 
-        headless: false,
-        executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+        headless: true,
+        executablePath: "/usr/bin/google-chrome" 
+        // headless: false,
+        // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
     });
     const page = await browser.newPage();
     await page.setViewport({ width: 900, height: 200 });
