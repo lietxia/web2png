@@ -19,7 +19,7 @@ if (argv.length >= 5) {
         //args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
-    await page.setViewport({ width: 770, height: 600 });
+    await page.setViewport({ width: 770, height: 600, deviceScaleFactor: 1.3 });
     let request_url = `https://rate.000.mk/chart/?area=${cid}&name=${name}`;
 
     await page.goto(request_url).catch(

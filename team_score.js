@@ -16,12 +16,12 @@ if (argv.length >= 6) {
 (async () => {
     const browser = await puppeteer.launch({
         headless: true,
-        executablePath: "/usr/bin/google-chrome" 
+        executablePath: "/usr/bin/google-chrome"
         // headless: false,
         // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
     });
     const page = await browser.newPage();
-    await page.setViewport({ width: 900, height: 200 });
+    await page.setViewport({ width: 900, height: 200, deviceScaleFactor: 1.3 });
     await page.goto(`https://cdn.r-mj.com/?cid=${cid}#!ranking_Log_${rand}`).catch(
         err => console.log(err)
     );
