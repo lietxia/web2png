@@ -44,7 +44,7 @@ if (argv.length >= 5) {
     try {
         let table = await page.$('#table1');
         await table.screenshot({
-            path: `rate_${index}.png`,
+            path: `./rank/rate_${index}.png`,
             // fullPage: true
         }).catch(err => {
             console.log('截图失败');
