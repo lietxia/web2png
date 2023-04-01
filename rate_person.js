@@ -15,13 +15,13 @@ if (argv.length >= 5) {
 (async () => {
     const browser = await puppeteer.launch({
         args: [
-            "–disable-gpu",
-            "–disable-dev-shm-usage",
-            "–disable-setuid-sandbox",
-            "–no-first-run",
-            "–no-sandbox",
-            "–no-zygote",
-            "–single-process"
+            '--disable-gpu',
+            '--disable-dev-shm-usage',
+            '--disable-setuid-sandbox',
+            '--no-first-run',
+            '--no-sandbox',
+            '--no-zygote',
+            '--single-process'
         ],
         headless: true,
         executablePath: "/usr/bin/google-chrome" //"/usr/bin/chromium-browser",
@@ -32,7 +32,7 @@ if (argv.length >= 5) {
         {
             width: 770,
             height: 600,
-           // deviceScaleFactor: 1.3
+            // deviceScaleFactor: 1.3
         }
     );
     let request_url = `https://rate.000.mk/chart/?area=${cid}&name=${name}`;

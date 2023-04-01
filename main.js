@@ -17,13 +17,13 @@ if (argv.length >= 5) {
 (async () => {
     const browser = await puppeteer.launch({
         args: [
-            "–disable-gpu",
-            "–disable-dev-shm-usage",
-            "–disable-setuid-sandbox",
-            "–no-first-run",
-            "–no-sandbox",
-            "–no-zygote",
-            "–single-process"
+            '--disable-gpu',
+            '--disable-dev-shm-usage',
+            '--disable-setuid-sandbox',
+            '--no-first-run',
+            '--no-sandbox',
+            '--no-zygote',
+            '--single-process'
         ],
         headless: true,
         executablePath: "/usr/bin/google-chrome" //"/usr/bin/chromium-browser",
