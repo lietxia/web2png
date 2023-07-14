@@ -34,7 +34,8 @@ if (argv.length >= 5) {
         height: 800
         //deviceScaleFactor: 1.3
     });
-    let request_url = `https://rate.000.mk/#/${index}/level/`;
+    //let request_url = `https://rate.000.mk/#/${index}/level/`;
+    let request_url = `http://bot0.000.mk/r/http/#/${index}/level/`;
 
     await page.goto(request_url).catch(
         err => console.log(err)

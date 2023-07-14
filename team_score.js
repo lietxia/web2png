@@ -36,9 +36,11 @@ if (argv.length >= 6) {
             height: 200,
             //deviceScaleFactor: 1.3
         });
-    await page.goto(`https://cdn.r-mj.com/?cid=${cid}#!ranking_Log_${rand}`).catch(
-        err => console.log(err)
-    );
+    await page.goto(`http://bot0.000.mk/?cid=${cid}#!ranking_Log_${rand}`)
+        //await page.goto(`https://cdn.r-mj.com/?cid=${cid}#!ranking_Log_${rand}`)
+        .catch(
+            err => console.log(err)
+        );
     await page.waitForSelector('table>tr', {
         timeout: 5000
     })
@@ -65,9 +67,11 @@ if (argv.length >= 6) {
     } catch (e) {
         console.log('执行异常');
     };
-    await page.goto(`https://cdn.r-mj.com/?cid=${cid}#!rankingChart${rand}`).catch(
-        err => console.log(err)
-    );
+    //await page.goto(`https://cdn.r-mj.com/?cid=${cid}#!rankingChart${rand}`)
+    await page.goto(`http://bot0.000.mk/?cid=${cid}#!rankingChart${rand}`)
+        .catch(
+            err => console.log(err)
+        );
     await page.waitForSelector('.charts', {
         timeout: 3000
     })
