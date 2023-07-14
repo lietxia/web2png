@@ -24,7 +24,7 @@ if (argv.length >= 6) {
             '--no-zygote',
             '--single-process'
         ],
-        headless: true,
+        headless: 'new',
         executablePath: "/usr/bin/google-chrome"
         // headless: false,
         // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'

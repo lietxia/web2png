@@ -23,7 +23,7 @@ if (argv.length >= 5) {
             '--no-zygote',
             '--single-process'
         ],
-        headless: true,
+        headless: 'new',
         executablePath: "/usr/bin/google-chrome" //"/usr/bin/chromium-browser",
         //args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
