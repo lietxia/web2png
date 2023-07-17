@@ -21,13 +21,12 @@ if (argv.length >= 6) {
             '--disable-setuid-sandbox',
             '--no-first-run',
             '--no-sandbox',
-            '--no-zygote',
-            '--single-process'
+            '--no-zygote'
         ],
+        //headless: false,
         headless: 'new',
-        executablePath: "/usr/bin/google-chrome"
-        // headless: false,
-        // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+        //executablePath: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome" ,
+        executablePath: "/usr/bin/google-chrome",
     });
     const page = await browser.newPage();
     await page.setViewport(
