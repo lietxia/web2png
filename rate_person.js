@@ -35,8 +35,8 @@ if (argv.length >= 5) {
             // deviceScaleFactor: 1.3
         }
     );
-    //let request_url = `http://bot0.000.mk/r/http/chart/?area=${cid}&name=${name}`;
-    let request_url = `https://rate.000.mk/chart/?area=${cid}&name=${name}`;
+    let request_url = `http://bot0.000.mk/r/http/chart/?area=${cid}&name=${name}`;
+    //let request_url = `https://rate.000.mk/chart/?area=${cid}&name=${name}`;
 
     await page.goto(request_url).catch(
         err => console.log(err)
